@@ -1,4 +1,4 @@
-package com.bike.server.annotation;
+package com.bike.annotation;
 
 import org.springframework.context.annotation.Conditional;
 

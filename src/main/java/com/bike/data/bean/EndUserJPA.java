@@ -1,4 +1,4 @@
-package com.bike.server.data.bean;
+package com.bike.data.bean;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity(name="End_Users")
+@Entity(name="end_users")
 final public class EndUserJPA {
 
 //schema

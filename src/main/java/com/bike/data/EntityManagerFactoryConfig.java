@@ -1,6 +1,6 @@
-package com.bike.server.data;
+package com.bike.data;
 
-import com.bike.server.annotation.Dev;
+import com.bike.annotation.Dev;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -19,7 +19,7 @@ public class EntityManagerFactoryConfig {
         LocalContainerEntityManagerFactoryBean sfb = new LocalContainerEntityManagerFactoryBean();
         sfb.setDataSource(ds);
         sfb.setJpaVendorAdapter(ad);
-        sfb.setPackagesToScan("com.bike.server.data.bean");
+        sfb.setPackagesToScan("com.bike.data.bean");
         Properties props = new Properties();
         props.setProperty("hibernate.hbm2ddl.auto", "update");
         props.setProperty("connection.pool_size", "10");

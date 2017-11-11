@@ -1,4 +1,4 @@
-package com.bike.server;
+package com.bike;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

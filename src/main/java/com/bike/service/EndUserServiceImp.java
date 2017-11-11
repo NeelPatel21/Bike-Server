@@ -1,6 +1,6 @@
-package com.bike.server.service;
+package com.bike.service;
 
-import com.bike.server.data.repo.EndUserRepo;
+import com.bike.data.repo.EndUserRepo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

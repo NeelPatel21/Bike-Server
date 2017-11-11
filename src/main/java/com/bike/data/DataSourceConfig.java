@@ -1,8 +1,9 @@
-package com.bike.server.data;
+package com.bike.data;
 
-import com.bike.server.annotation.DeployNonHeroku;
-import com.bike.server.annotation.DevNonDeploy;
+import com.bike.annotation.DeployNonHeroku;
+import com.bike.annotation.DevNonDeploy;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;

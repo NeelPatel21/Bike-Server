@@ -1,4 +1,4 @@
-package com.bike.server.annotation;
+package com.bike.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -14,7 +14,8 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Bean
 @Primary
-@Profile({"dev"})
+@AndProfile
+@Profile({"deploy","!heroku"})
 @Autowired
-public @interface Dev {
+public @interface DeployNonHeroku {
 }

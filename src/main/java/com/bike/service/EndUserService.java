@@ -1,4 +1,4 @@
-package com.bike.server.service;
+package com.bike.service;
 
 public interface EndUserService {
     int createEndUser();

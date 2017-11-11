@@ -1,7 +1,7 @@
-package com.bike.server.data.repo;
+package com.bike.data.repo;
 
-import com.bike.server.annotation.Dev;
-import com.bike.server.data.bean.EndUserJPA;
+import com.bike.annotation.Dev;
+import com.bike.data.bean.EndUserJPA;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
