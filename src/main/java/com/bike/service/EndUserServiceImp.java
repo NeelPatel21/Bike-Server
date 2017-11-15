@@ -2,6 +2,7 @@ package com.bike.service;
 
 import com.bike.annotation.Dev;
 import com.bike.annotation.Mock;
+import com.bike.data.bean.EndUserJPA;
 import com.bike.data.repo.EndUserRepo;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +16,16 @@ public class EndUserServiceImp implements EndUserService {
     private EndUserRepo repo;
 
     @Override
-    public int createEndUser() {
-        return 0;
+    public int createEndUser(EndUserJPA newUSer) {
+
+        if(repo.saveAndFlush(newUSer).getUserId()>0)
+            return 0;
+        return -1;
+    }
+
+    @Override
+    public EndUserJPA getUser(String userName) {
+        return repo.getByUserName(userName);
     }
 
 }

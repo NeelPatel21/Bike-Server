@@ -27,20 +27,19 @@ import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-
 /*
-@SpringBootApplication(scanBasePackages = {"com.bike","com.bike.controller","com.bike.service"},
+@SpringBootApplication(scanBasePackages = {"com.bike.annotation","com.bike.data",
+		"com.bike.dispatcher","com.bike.service"},
 		exclude = {DataSourceAutoConfiguration.class,JndiDataSourceAutoConfiguration.class,
 				DataSourceTransactionManagerAutoConfiguration.class,JdbcTemplateAutoConfiguration.class,
 				XADataSourceAutoConfiguration.class,WebMvcAutoConfiguration.class,
-				DispatcherServletAutoConfiguration.class,RepositoryRestMvcAutoConfiguration.class
+				DispatcherServletAutoConfiguration.class,RepositoryRestMvcAutoConfiguration.class,
 				ServerPropertiesAutoConfiguration.class,SpringDataWebAutoConfiguration.class,
-				CassandraDataAutoConfiguration.class, CassandraRepositoriesAutoConfiguration.class
+				CassandraDataAutoConfiguration.class, CassandraRepositoriesAutoConfiguration.class,
 				ErrorMvcAutoConfiguration.class,MultipartAutoConfiguration.class,
-				WebClientAutoConfiguration.class})
-*/
+				WebClientAutoConfiguration.class})*/
 @Configuration
-@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class,JndiDataSourceAutoConfiguration.class,
+@EnableAutoConfiguration(exclude = {/*DataSourceAutoConfiguration.class,*/JndiDataSourceAutoConfiguration.class,
 		DataSourceTransactionManagerAutoConfiguration.class,JdbcTemplateAutoConfiguration.class,
 		XADataSourceAutoConfiguration.class,WebMvcAutoConfiguration.class,
 		DispatcherServletAutoConfiguration.class,RepositoryRestMvcAutoConfiguration.class,

@@ -9,4 +9,5 @@ import org.springframework.stereotype.Repository;
 @Dev
 @Repository
 public interface EndUserRepo extends JpaRepository<EndUserJPA,Long> {
+    EndUserJPA getByUserName(String userName);
 }

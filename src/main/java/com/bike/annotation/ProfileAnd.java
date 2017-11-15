@@ -17,7 +17,8 @@ public class ProfileAnd implements Condition {
             if (attrs != null) {
                 for (final Object value : attrs.get("value")) {
                     final String activeProfiles = context.getEnvironment().getProperty("spring.profiles.active");
-
+                    if (activeProfiles == null)
+                        return false;
                     for (final String profile : (String[]) value) {
                         if (profile.trim().startsWith("!"))
                             return !activeProfiles.contains(profile.substring(1));

@@ -39,6 +39,10 @@ final public class EndUserJPA {
 
     public EndUserJPA(){}
 
+    public long getUserId() {
+        return userId;
+    }
+
     public String getUserName() {
         return userName;
     }
