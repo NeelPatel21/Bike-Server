@@ -43,7 +43,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 		DataSourceTransactionManagerAutoConfiguration.class,JdbcTemplateAutoConfiguration.class,
 		XADataSourceAutoConfiguration.class,WebMvcAutoConfiguration.class,
 		DispatcherServletAutoConfiguration.class,RepositoryRestMvcAutoConfiguration.class,
-		ServerPropertiesAutoConfiguration.class,SpringDataWebAutoConfiguration.class,
+		/*ServerPropertiesAutoConfiguration.class,*/SpringDataWebAutoConfiguration.class,
 		ErrorMvcAutoConfiguration.class,MultipartAutoConfiguration.class,
 		CassandraDataAutoConfiguration.class, CassandraRepositoriesAutoConfiguration.class,
 		WebClientAutoConfiguration.class,HttpEncodingAutoConfiguration.class})
