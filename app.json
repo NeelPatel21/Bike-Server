@@ -1,0 +1,20 @@
+{
+  "name": "Bike-Server",
+  "scripts": {
+  },
+  "env": {
+    "PORT": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ]
+}
